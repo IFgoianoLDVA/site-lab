@@ -1,0 +1,127 @@
+---
+title: "Amostragem de Insetos-Praga em Transectos"
+author: "Elias Mendes Costa e Tavvs Alves"
+date: 2024-02-16T21:13:14-05:00
+categories: ["Ecologia", "Agricultura"]
+tags: ["Amostragem", "Insetos-Praga", "Transectos", "Manejo Integrado de Pragas"]
+---
+
+
+
+# Introdução à Amostragem em Transectos
+
+Este é um documento em R Markdown que discute a metodologia de amostragem de insetos-praga em transectos. A amostragem em transectos é uma técnica fundamental para o monitoramento populacional de insetos-praga em grandes áreas agrícolas. Essa técnica permite aos pesquisadores e agricultores obter estimativas confiáveis sobre a densidade e distribuição dos insetos-praga, essenciais para o desenvolvimento de estratégias eficazes de manejo integrado de pragas (MIP).
+
+# Metodologia de Amostragem
+
+A metodologia consiste na avaliação de 5 pontos amostrais por transecto, espaçados aproximadamente 30 metros entre si. O primeiro ponto de amostragem dista aproximadamente 50 metros do início do talhão. Esta abordagem assegura uma boa representatividade da população de insetos-praga na área monitorada.
+
+# Exemplo com dados simulados
+
+```r
+# Lendos os pacotes 
+library(tidyverse)
+## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+## ✔ dplyr     1.1.4     ✔ readr     2.1.4
+## ✔ forcats   1.0.0     ✔ stringr   1.5.1
+## ✔ ggplot2   3.4.4     ✔ tibble    3.2.1
+## ✔ lubridate 1.9.3     ✔ tidyr     1.3.0
+## ✔ purrr     1.0.2     
+## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+## ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+# Exemplo hipotético de código para análise de dados de amostragem
+# Observação: Este código é apenas ilustrativo
+# Criando vetores de latitude e longitude
+latitude <- c(471958, 471928, 471904, 471884, 471857, 471963, 471940, 471919, 471895, 471872, 470696, 470713, 470734, 470755, 470772, 470666, 470684, 470704, 470725, 470748, 470398, 470415, 470437, 470460, 470484, 470636, 470657, 470675, 470693, 470708, 471966, 471917, 471893, 471862, 471952, 471952, 471919, 471889, 471852, 471821, 472867, 472837, 472818, 472797, 472774, 472745, 472715, 472686, 472657, 472627, 471509, 471540, 471566, 471593, 471620, 471444, 471473, 471495, 471518, 471536, 470409, 470431, 470451, 470473, 470496, 470580, 470602, 470623, 470643, 470665, 470640, 470662, 470682, 470719, 470740, 471395, 471423, 471441, 471462, 471483, 470623, 470653, 470690, 470724, 470761, 470458, 470485, 470509, 470532, 470556, 471966, 471934, 471908, 471888, 471863, 471966, 471941, 471916, 471891, 471869, 471110, 471131, 471153, 471177, 471198, 471737, 471772, 471816, 471847, 471878, 472729, 472700, 472667, 472643, 472618, 472773, 472745, 472721, 472694, 472669, 470392, 470415, 470439, 470462, 470485, 470462, 470489, 470517, 470541, 470565, 471974, 471952, 471932, 471909, 471889, 471958, 471936, 471914, 471896, 471873, 470717, 470738, 470761, 470786, 470812, 471735, 471770, 471804, 471840, 471874, 472891, 472869, 472848, 472825, 472803, 472306, 472284, 472262, 472238, 472216, 470630, 470650, 470676, 470700, 470724, 470617, 470647, 470679, 470711, 470743, 471968, 471940, 471912, 471881, 471851, 471962, 471931, 471902, 471874, 471846, 471049, 471073, 471095, 471118, 471141, 471742, 471771, 471797, 471825, 471854, 472902, 472877, 472855, 472830, 472807, 471979, 471948, 471922, 471895, 471866, 470623, 470654, 470679, 470701, 470726, 470631, 470655, 470679, 470708, 470733, 471964, 471943, 471914, 471887, 471862, 471960, 471940, 471917, 471893, 471869, 470716, 470742, 470765, 470790, 470810, 471740, 471770, 471795, 471823, 471847, 472713, 472687, 472662, 472638, 472615, 471935, 471909, 471885, 471861, 471836, 470640, 470663, 470688, 470712, 470735, 470627, 470658, 470685, 470711, 470736, 471960, 471937, 471911, 471887, 471857, 471954, 471928, 471903, 471876, 471852, 470808, 470831, 470857, 470878, 470903, 471460, 471487, 471513, 471538, 471562, 472741, 472716, 472690, 472663, 472632, 472877, 472847, 472814, 472788, 472764)
+longitude <- c(8064589, 8064586, 8064586, 8064583, 8064583, 8064795, 8064795, 8064795, 8064795, 8064795, 8064461, 8064461, 8064465, 8064465, 8064465, 8064658, 8064661, 8064661, 8064661, 8064661, 8065020, 8065029, 8065030, 8065028, 8065030, 8064493, 8064495, 8064498, 8064499, 8064503, 8064544, 8064553, 8064547, 8064546, 8064941, 8064941, 8064941, 8064940, 8064939, 8064940, 8065961, 8065961, 8065962, 8065962, 8065960, 8066459, 8066460, 8066461, 8066461, 8066462, 8066108, 8066109, 8066109, 8066111, 8066111, 8065894, 8065889, 8065887, 8065887, 8065887, 8065085, 8065085, 8065084, 8065085, 8065086, 8065056, 8065054, 8065054, 8065054, 8065053, 8065648, 8065645, 8065645, 8065644, 8065646, 8065685, 8065684, 8065685, 8065685, 8065685, 8064965, 8064970, 8064970, 8064969, 8064970, 8065147, 8065146, 8065146, 8065147, 8065147, 8065415, 8065414, 8065414, 8065415, 8065415, 8065147, 8065146, 8065146, 8065146, 8065147, 8065655, 8065656, 8065656, 8065656, 8065656, 8066411, 8066410, 8066407, 8066408, 8066409, 8066588, 8066589, 8066589, 8066589, 8066589, 8066318, 8066319, 8066319, 8066319, 8066318, 8064982, 8064979, 8064981, 8064980, 8064979, 8065195, 8065198, 8065200, 8065201, 8065201, 8065056, 8065057, 8065056, 8065056, 8065057, 8064731, 8064731, 8064731, 8064731, 8064731, 8065643, 8065645, 8065646, 8065637, 8065645, 8066320, 8066319, 8066319, 8066319, 8066317, 8065865, 8065864, 8065865, 8065865, 8065865, 8065749, 8065749, 8065749, 8065749, 8065748, 8064907, 8064909, 8064909, 8064909, 8064912, 8064992, 8064993, 8064993, 8064994, 8064992, 8065089, 8065089, 8065089, 8065090, 8065089, 8064907, 8064907, 8064907, 8064905, 8064906, 8065667, 8065669, 8065670, 8065671, 8065672, 8066382, 8066383, 8066382, 8066382, 8066383, 8065779, 8065779, 8065777, 8065778, 8065780, 8065743, 8065744, 8065746, 8065746, 8065745, 8064464, 8064460, 8064459, 8064461, 8064464, 8064577, 8064576, 8064576, 8064576, 8064576, 8065129, 8065130, 8065129, 8065127, 8065127, 8064905, 8064906, 8064905, 8064906, 8064906, 8065645, 8065647, 8065646, 8065639, 8065649, 8066377, 8066376, 8066376, 8066373, 8066376, 8066585, 8066586, 8066586, 8066588, 8066586, 8065689, 8065689, 8065689, 8065689, 8065689, 8064545, 8064548, 8064550, 8064547, 8064547, 8064729, 8064728, 8064727, 8064726, 8064727, 8065090, 8065085, 8065086, 8065086, 8065085, 8064755, 8064755, 8064754, 8064754, 8064754, 8065645, 8065648, 8065650, 8065638, 8065642, 8065714, 8065715, 8065717, 8065715, 8065715, 8066349, 8066348, 8066349, 8066348, 8066348, 8065775, 8065776, 8065778, 8065777, 8065776)
+
+# Gerando datas de coleta
+datas <- rep(c("22/12/2023", "27/12/2023", "3/1/2024", "9/1/2024", "17/1/2024", "22/1/2024", "29/1/2024", "5/2/2024"), each = 20)
+datas <- rep(datas, length.out = 280)
+# Gerando números aleatórios de lagartas para cada coordenada
+lagartas <- sample(0:20, length(latitude), replace = TRUE)
+
+# Criando o DataFrame
+dados <- data.frame(Latitude = latitude, Longitude = longitude, Lagartas = lagartas, Data = datas)
+
+# Mostrando as primeiras linhas do DataFrame
+head(dados)
+##   Latitude Longitude Lagartas       Data
+## 1   471958   8064589        5 22/12/2023
+## 2   471928   8064586       11 22/12/2023
+## 3   471904   8064586        1 22/12/2023
+## 4   471884   8064583        1 22/12/2023
+## 5   471857   8064583       17 22/12/2023
+## 6   471963   8064795       19 22/12/2023
+# Converter 'Data' para tipo data
+dados$Data <- as.Date(dados$Data, format = "%d/%m/%Y")
+
+# Calcular média de lagartas por data
+dados_agrupados <- dados %>%
+  group_by(Data) %>%
+  summarise(Média_de_Lagartas = mean(Lagartas))
+```
+
+# Incluindo um plot
+
+Você pode fazer gráficos. Veja a Figura <a href="#fig:plot">1</a> por exemplo:
+
+
+```r
+library(ggplot2)
+ggplot(dados_agrupados, aes(x = Data, y = Média_de_Lagartas)) +
+  geom_line(group=1, colour="blue") + # Linha conectando os pontos
+  geom_point(colour="red") + # Pontos para cada data
+  labs(title = "Média de Lagartas por Data",
+       x = "Data", y = "Média de Lagartas") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) # Rotacionar as datas para melhor visualização
+```
+
+<div class="figure">
+<img src="{{< blogdown/postref >}}index.en_files/figure-html/plot-1.png" alt="Média de lagartas ao longo do tempo." width="672" />
+<p class="caption"><span id="fig:plot"></span>Figure 1: Média de lagartas ao longo do tempo.</p>
+</div>
+
+
+```r
+# Carregar os pacotes necessários
+library(sf)
+## Linking to GEOS 3.10.2, GDAL 3.4.1, PROJ 8.2.1; sf_use_s2() is TRUE
+library(mapview)
+# Criar um objeto sf a partir do DataFrame
+# Lembre-se de que suas coordenadas precisam ser numéricas para a conversão.
+# Criar um objeto sf a partir do DataFrame
+# Lembre-se de que suas coordenadas precisam ser numéricas para a conversão.
+
+dados$Latitude <- as.numeric(dados$Latitude)
+dados$Longitude <- as.numeric(dados$Longitude)
+# Criar um objeto sf
+dados_sf <- st_as_sf(dados, coords = c("Latitude", "Longitude"), crs = 32722)  # 32722 representa a projeção UTM zona 22 K (WGS 84)
+
+library(leaflet)
+library(htmlwidgets)
+
+# Supondo que 'map' é o seu objeto de mapa criado com leaflet
+# Substitua 'dados_sf_geo' e 'Lagartas' pelos seus dados e variável correspondente.
+
+# Seu código para criar o mapa
+dados_sf_geo <- st_transform(dados_sf, crs = 4326) # Transformar coordenadas
+map <- leaflet(dados_sf_geo) %>%
+  addProviderTiles(providers$OpenStreetMap) %>%
+  addMarkers(popup = ~as.character(Lagartas))
+
+# Salvar o mapa como HTML
+saveWidget(map, './index.en_files/map.html')
+```
+
+<iframe src="./index.en_files/map.html" width="600" height="400"></iframe>
+
+# Importância do Monitoramento de Pragas
+
+O monitoramento de insetos-praga é uma componente crítica do manejo integrado de pragas (MIP). Através do monitoramento eficaz, é possível:
+- Identificar precocemente a presença de pragas, permitindo intervenções mais direcionadas e menos prejudiciais ao meio ambiente.
+- Avaliar a eficácia de estratégias de controle aplicadas.
+- Minimizar o uso de pesticidas, aplicando-os apenas quando necessário e na quantidade correta, reduzindo os custos de produção e o impacto ambiental.

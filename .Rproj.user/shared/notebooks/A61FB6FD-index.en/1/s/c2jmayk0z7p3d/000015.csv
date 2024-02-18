@@ -1,0 +1,7 @@
+"0","# Converter 'Data' para tipo data"
+"0","dados$Data <- as.Date(dados$Data, format = ""%d/%m/%Y"")"
+"0",""
+"0","# Calcular média de lagartas por data"
+"0","dados_agrupados <- dados %>%"
+"0","  group_by(Data) %>%"
+"0","  summarise(Média_de_Lagartas = mean(Lagartas))"

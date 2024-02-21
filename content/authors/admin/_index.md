@@ -1,46 +1,26 @@
 ---
-bio: Tavvs Alves possui pós-doutorado pela Universidade Texas A&M e doutorado em entomologia pela Universidade de Minnesota nos Estados Unidos. Atua como professor efetivo no Instituto Federal Goiano. Coordena e colabora em projetos de inovação com empresas da agroindústria, principalmente nas áreas de agricultura digital, drones, automação e big data. Foi líder de um projeto de pesquisa e inovação de R$ 50 milhões objetivando a criação de um centro de excelência em internet das coisas para o agronegócio. Foi mentor de startup premiada pela FAEG/Senar. Palestrante e orientador de profissionais no agronegócio. É bolsista produtividade DT e editor associado da Neotropical Entomology.
-  matter.
-education:
-  courses:
-  - course: PhD in Entomology
-    institution: University of Minnesota System, UMN, Estados Unidos
-    year: 2017
-  - course: Mestrado em Agronomia (Fitossanidade) 
-    institution: Universidade Federal de Goiás
-    year: 2012
-  - course: Graduação em AGRONOMIA
-    institution: Universidade Federal de Goiás
-    year: 2010
+bio: O laboratório especializa-se em pesquisa e desenvolvimento na área de agricultura digital e de precisão, com um foco intensivo no uso de drones e VANTS. Reúne uma equipe multidisciplinar, abrangendo profissionais de informática, computação, agronomia, e outras disciplinas das ciências agrárias, dedicada a projetos que visam avaliar e monitorar a saúde das plantas, a fertilidade do solo, bem como a incidência e distribuição de pragas. As iniciativas do laboratório buscam, essencialmente, aprimorar práticas agrícolas e automatizar processos, empregando para isso as mais avançadas tecnologias.
+
 email: ""
-first_name: Tavvs
+first_name: SapFly
 highlight_name: false
 interests:
-- Agricultura digital
-- Manejo Integrado de Pragas
-- Empreendedorismo
-last_name: Micael Alves
+- Agricultura Digital
+- Agricultura de Precisão
+- Entomologia e Manejo Integrado de Pragas
+- Fitopatologia e Nematologia
+- Fertilidade e Manejo de Solos
+
+last_name: SapFly
 organizations:
 - name: Instituto Federal Goiano
   url: "https://www.ifgoiano.edu.br/home/"
-role: Professor de Entomologia e Agricultura Digital
+role: Laboratório de Agricultura Preditiva
 social:
-- icon: envelope
-  icon_pack: fas
-  link: tavvs.alves@ifgoiano.edu.br 
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.com/citations?hl=en&user=P9dDFlkAAAAJ
-- icon: instagram
-  icon_pack: fab
-  link: https://www.instagram.com/tavvsalves/?hl=en
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/in/tavvs/?locale=pt_BR
 superuser: true
-title: Tavvs Alves
+title: SapFly
 user_groups:
-- Líderes
+
 ---
 
-Tavvs Alves possui pós-doutorado pela Universidade Texas A&M e doutorado em entomologia pela Universidade de Minnesota nos Estados Unidos. Atua como professor efetivo no Instituto Federal Goiano. Coordena e colabora em projetos de inovação com empresas da agroindústria, principalmente nas áreas de agricultura digital, drones, automação e big data. Foi líder de um projeto de pesquisa e inovação de R$ 50 milhões objetivando a criação de um centro de excelência em internet das coisas para o agronegócio. Foi mentor de startup premiada pela FAEG/Senar. Palestrante e orientador de profissionais no agronegócio. É bolsista produtividade DT e editor associado da Neotropical Entomology
+O laboratório especializa-se em pesquisa e desenvolvimento na área de agricultura digital e de precisão, com um foco intensivo no uso de drones e VANTS. Reúne uma equipe multidisciplinar, abrangendo profissionais de informática, computação, agronomia, e outras disciplinas das ciências agrárias, dedicada a projetos que visam avaliar e monitorar a saúde das plantas, a fertilidade do solo, bem como a incidência e distribuição de pragas. As iniciativas do laboratório buscam, essencialmente, aprimorar práticas agrícolas e automatizar processos, empregando para isso as mais avançadas tecnologias.

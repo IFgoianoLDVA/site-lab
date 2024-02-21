@@ -17,6 +17,9 @@ organizations:
   url: "https://www.ifgoiano.edu.br/home/"
 role: Laboratório de Agricultura Preditiva
 social:
+- icon: instagram
+  icon_pack: fab
+  link: https://www.instagram.com/poloifgoiano
 superuser: true
 title: SapFly
 user_groups:

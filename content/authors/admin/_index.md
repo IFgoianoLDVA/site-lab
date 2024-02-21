@@ -13,8 +13,8 @@ interests:
 
 last_name: SapFly
 organizations:
-- name: Instituto Federal Goiano
-  url: "https://www.ifgoiano.edu.br/home/"
+- name: Instituto Federal Goiano / Polo de Inovação Embrapii
+  url: "https://www.ifgoiano.edu.br/home/index.php/polo-de-inovacao.html"
 role: Laboratório de Agricultura Preditiva
 social:
 - icon: instagram

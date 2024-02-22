@@ -19,7 +19,7 @@ role: Laboratório de Agricultura Preditiva
 social:
 - icon: instagram
   icon_pack: fab
-  link: https://www.instagram.com/poloifgoiano
+  link: https://www.instagram.com/sapflylab
 superuser: true
 title: SapFly
 user_groups:

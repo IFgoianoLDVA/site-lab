@@ -7,5 +7,5 @@
 
 [build]
 	publish = "public"
-	command = "hugo --minify --buildFuture -b https://shiny-madeleine-8b0158.netlify.app"
+	command = "hugo --minify --buildFuture -b https://sapfly.netlify.app"
 

@@ -16,7 +16,7 @@ sections:
       latitude: "-17.80136"
       longitude: "-50.90638"
     directions: Polo de Inovação Embrapii - IF Goiano
-    email: rioverde@ifgoiano.edu.br
+    email: polo.inovacao@ifgoiano.edu.br
     form:
       formspree:
         id: null

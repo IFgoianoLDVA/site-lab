@@ -31,4 +31,4 @@ user_groups:
 - Graduandos
 ---
 
-Cursando Agronomia no Instituto Federal Goiano – campus Rio Verde (2021-2026). Atualmente é estagiária na Embrapii e participa de projetos voltados na área de entomologia e agricultura digital atuando na identificação de adultos de lepidópteros-praga de grandes culturas e auxiliando em pulverização com drones. 
+Técnica em agropecuária pelo Instituto Federal Goiano – campus Campos Belos (2017-2019), cursando Zootecnia no Instituto Federal Goiano – campus Rio Verde (2020-2025). Atualmente é estagiária na Embrapii e participa de projetos voltados na área de entomologia e agricultura digital atuando na identificação de adultos de lepidópteros-praga de grandes culturas e auxiliando em pulverização com drones. 

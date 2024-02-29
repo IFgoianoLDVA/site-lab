@@ -25,7 +25,7 @@ last_name: Maia Geraldine
 organizations:
 - name: Instituto Federal Goiano
   url: "https://www.ifgoiano.edu.br/home/"
-role: Professor de Fitopatologia e Drones na Agricultura
+role: Professor/Pesquisador de Fitopatologia e Drones na Agricultura
 social:
 - icon: envelope
   icon_pack: fas
@@ -40,7 +40,7 @@ social:
   icon_pack: fab
   link: https://www.linkedin.com/in/alaerson-geraldine-65268035/?originalSubdomain=br
 superuser: true
-title: Alaerson Geraldine
+title: Dr. Alaerson Geraldine
 user_groups:
 - Líderes
 ---

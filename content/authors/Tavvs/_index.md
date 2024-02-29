@@ -23,7 +23,7 @@ last_name: Micael Alves
 organizations:
 - name: Instituto Federal Goiano
   url: "https://www.ifgoiano.edu.br/home/"
-role: Professor de Entomologia e Agricultura Digital
+role: Professor/Pesquisador em Entomologia e Agricultura Digital
 social:
 - icon: envelope
   icon_pack: fas
@@ -38,7 +38,7 @@ social:
   icon_pack: fab
   link: https://www.linkedin.com/in/tavvs/?locale=pt_BR
 superuser: true
-title: Tavvs Alves
+title: Dr. Tavvs Alves
 user_groups:
 - Líderes
 ---

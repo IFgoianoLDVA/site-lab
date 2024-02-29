@@ -18,7 +18,7 @@ last_name: Silva Araujo
 organizations:
 - name: Instituto Federal Goiano
   url: "https://www.ifgoiano.edu.br/home/"
-role: Iniciação Científica
+role:  Graduando em Ciência da Computação - Iniciação Científica
 social:
 - icon: envelope
   icon_pack: fas

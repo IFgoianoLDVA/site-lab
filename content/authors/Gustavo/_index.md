@@ -24,7 +24,7 @@ last_name: Castoldi
 organizations:
 - name: Instituto Federal Goiano
   url: "https://www.ifgoiano.edu.br/home/"
-role: Professor de Fertilidade do Solo, Culturas Anuais e Metodologia da Pesquisa
+role: Professor/Pesquisador de Fertilidade do Solo, Culturas Anuais e Metodologia da Pesquisa
 social:
 - icon: envelope
   icon_pack: fas
@@ -39,7 +39,7 @@ social:
   icon_pack: fab
   link: https://www.linkedin.com/in/gustavo-castoldi-24725861/?originalSubdomain=br
 superuser: true
-title: Gustavo Castoldi
+title: Dr. Gustavo Castoldi
 user_groups:
 - Líderes
 ---

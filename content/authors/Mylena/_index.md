@@ -25,7 +25,7 @@ last_name: Marques Dorneles
 organizations:
 - name: Instituto Federal Goiano
   url: "https://www.ifgoiano.edu.br/home/"
-role: Doutoranda em Ciências Agrárias
+role: Eng. Agrônoma - Doutoranda em Ciências Agrárias
 social:
 - icon: envelope
   icon_pack: fas

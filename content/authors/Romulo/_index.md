@@ -22,7 +22,7 @@ last_name: Moreira Silva
 organizations:
 - name: Instituto Federal Goiano
   url: "https://www.ifgoiano.edu.br/home/"
-role: Prestador de Serviço com Drone e Experimentação Agrícola
+role: Eng. Agrônomo - Prestador de Serviço com Drone e Experimentação Agrícola
 social:
 - icon: envelope
   icon_pack: fas

@@ -24,7 +24,7 @@ last_name: Silva Nunes
 organizations:
 - name: Instituto Federal Goiano
   url: "https://www.ifgoiano.edu.br/home/"
-role: Pesquisador Pós doc
+role: Eng. Agrônomo - Pesquisador Pós doc
 social:
 - icon: envelope
   icon_pack: fas

@@ -17,7 +17,7 @@ last_name: Russinholi Paiva
 organizations:
 - name: Instituto Federal Goiano
   url: "https://www.ifgoiano.edu.br/home/"
-role: Iniciação Científica
+role:  Graduando em Agronomia - Iniciação Científica
 social:
 - icon: envelope
   icon_pack: fas

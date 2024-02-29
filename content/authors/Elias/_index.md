@@ -24,7 +24,7 @@ last_name: Mendes Costa
 organizations:
 - name: Instituto Federal Goiano
   url: "https://www.ifgoiano.edu.br/home/"
-role: Pesquisador Pós Doc
+role: Eng. Agrônomo - Pesquisador Pós Doc
 social:
 - icon: envelope
   icon_pack: fas

@@ -32,7 +32,7 @@ social:
   link: alaerson.geraldine@ifgoiano.edu.br 
 - icon: google-scholar
   icon_pack: ai
-  link: hhttps://scholar.google.com.br/citations?user=9JittJYAAAAJ&hl=pt-BR
+  link: https://scholar.google.com.br/citations?user=9JittJYAAAAJ&hl=pt-BR
 - icon: instagram
   icon_pack: fab
   link: https://www.instagram.com/alaerson/?hl=en
